@@ -1,7 +1,9 @@
 Devotea::Application.routes.draw do
-  get "pages/index"
-  get "pages/contact"
-  get "pages/about"
+  get "tea/index"
+  root "pages#index"
+  get "contact" => "pages#contact"
+  get "about" => "pages#about"
+  get "links" => "pages#links"
 
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
