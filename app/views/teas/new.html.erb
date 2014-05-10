@@ -1,0 +1,6 @@
+<%= simple_form_for @tea do |f| %>
+  <%= f.input :name, required: true, uniqueness: true, %>
+  <%= f.input :type, required: true %>
+  <%= f.input :country, required: false %>
+  <%= f.button :decription, required: false %>
+<% end %>
